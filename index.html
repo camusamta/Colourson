@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width" />
+    <title>Wes Anderson: A Colour Retrospective</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,600" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" rel='stylesheet'>
+    <script src="tinycolor.js"></script>
+    <!-- <script src="require.js"></script> -->
+    <script src="color-sort-master/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+<svg class="hat-icon" xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <defs>
+    <filter id="hat-a" width="130.6%" height="130.6%" x="-15.3%" y="-14.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1484375 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#hat-a)" transform="translate(16 16)">
+    <circle cx="80" cy="80" r="80" fill="#B0D2DD"/>
+    <g transform="translate(23 32)">
+      <path fill="#E53D17" d="M5.07064205,93.6021563 C7.85560149,92.2254145 6.06100183,77.9354896 11.0128007,71.081323 C15.9645996,64.2271563 17.9453191,61.2896563 25.8681973,57.3729896 C33.7910755,53.456323 38.7428744,48.5604896 47.6561124,48.5604896 C56.5693504,48.5604896 62.511509,48.5604896 68.4536677,48.5604896 C74.3958263,48.5604896 82.3187046,52.4771563 86.2801437,52.4771563 C90.2415828,52.4771563 98.164461,59.331323 101.13554,63.2479896 C104.10662,67.1646563 110.048778,71.081323 110.048778,75.9771563 C110.048778,80.8729896 113.019858,80.8729896 113.019858,80.8729896 C113.019858,80.8729896 115.990937,83.8104896 115.990937,75.9771563 C115.990937,68.143823 113.019858,54.4354896 107.077699,48.5604896 C101.13554,42.6854896 95.0745385,30.5486584 91.1130994,27.6111584 C87.1516603,24.6736584 83.4279075,21.5306542 78.3572655,19.1854896 C73.2866234,16.840325 71.3059038,14.8819917 70.3155441,13.3104896 C69.3251843,11.7389876 73.2866234,9.98615836 73.2866234,6.06949169 C73.2866234,2.15282503 72.2962636,1.17365836 67.3444647,0.194491694 C62.3926659,-0.784674972 57.440867,2.15282503 55.4601474,4.11115836 C53.4794279,6.06949169 53.4794279,9.39382297 52.4890681,11.75 C51.4987083,14.106177 39.7332342,14.2896563 35.7717951,19.1854896 C31.810356,24.081323 18.9356789,29.956323 18.9356789,33.8729896 C18.9356789,37.7896563 5.07064205,47.581323 5.07064205,52.4771563 C5.07064205,57.3729896 -2.85223615,67.1646563 1.10920295,75.9771563 C5.07064205,84.7896563 2.28568261,94.9788981 5.07064205,93.6021563 Z"/>
+      <path fill="#CE321C" d="M3.54135751 59.7291667C5.62706111 59.7291667 10.4548149 56.124053 15.0637864 52.5189394 19.672758 48.9138258 16.2160293 44.1070076 26.5862153 44.1070076 36.9564013 44.1070076 40.41313 39.3001894 46.1743445 39.3001894 50.0151541 39.3001894 56.1604495 39.3001894 64.6102307 39.3001894 76.1326596 42.5047348 83.4301979 44.1070076 86.5028457 44.1070076 91.1118172 44.1070076 100.319899 50.1155303 103.786489 50.1155303 107.253079 50.1155303 109.547703 50.1155303 101.482003 45.3087121 93.416303 40.5018939 87.6550885 36.8967803 81.8938741 36.8967803 76.1326596 36.8967803 69.2192023 33.2916667 66.9147165 33.2916667 64.6102307 33.2916667 55.3922876 33.2916667 50.783316 33.2916667 46.1743445 33.2916667 33.4996727 36.8967803 30.042944 36.8967803 27.7384582 36.8967803 22.7454057 39.3001894 15.0637864 44.1070076L6.99808619 52.5189394C3.30313134 57.3257576 2.15088845 59.7291667 3.54135751 59.7291667zM55.4601474 12.0168645C55.4601474 11.0376979 56.4505072 12.0168645 58.4312268 9.07936452 60.4119463 6.14186452 60.4119463 5.16269785 62.3926659 4.18353118 64.3733854 3.20436452 68.3348245 1.24603118 68.3348245 2.22519785 68.3348245 3.20436452 67.3444647 4.18353118 65.3637452 5.16269785 63.3830256 6.14186452 60.9071262 7.12103118 61.4023061 8.10019785 61.897486 9.07936452 59.4215865 10.0585312 59.4215865 11.0376979 59.4215865 12.0168645 55.4601474 12.9960312 55.4601474 12.0168645z"/>
+      <path fill="#CE321C" d="M58.1306258,19.3432514 C58.1306258,17.8042836 58.6389737,19.3432514 59.6556694,14.7263482 C60.6723651,10.1094451 60.6723651,8.57047737 61.6890607,7.03150966 C62.7057564,5.49254195 64.7391478,2.41460652 64.7391478,3.95357423 C64.7391478,5.49254195 64.2307999,7.03150966 63.2141043,8.57047737 C62.1974086,10.1094451 60.926539,11.6484128 61.1807129,13.1873805 C61.4348868,14.7263482 60.1640172,16.2653159 60.1640172,17.8042836 C60.1640172,19.3432514 58.1306258,20.8822191 58.1306258,19.3432514 Z" opacity=".469" transform="rotate(70 61.435 11.757)"/>
+      <path fill="#CE321C" d="M27.8500043,39.4375927 C27.8500043,37.4625218 28.1547304,39.4375927 28.7641826,33.5123798 C29.3736348,27.5871669 29.3736348,25.6120959 29.9830869,23.637025 C30.5925391,21.661954 31.8114434,17.7118121 31.8114434,19.686883 C31.8114434,21.661954 31.5067174,23.637025 30.8972652,25.6120959 C30.287813,27.5871669 29.5259978,29.5622379 29.6783608,31.5373089 C29.8307239,33.5123798 29.0689087,35.4874508 29.0689087,37.4625218 C29.0689087,39.4375927 27.8500043,41.4126637 27.8500043,39.4375927 Z" transform="rotate(30 29.83 29.702)"/>
+      <path fill="#CE321C" d="M39.0202162,36.0182656 C39.0202162,34.0431946 39.3249423,36.0182656 39.9343945,30.0930527 C40.5438467,24.1678398 40.5438467,22.1927688 41.1532988,20.2176978 C41.762751,18.2426269 42.9816553,14.2924849 42.9816553,16.2675559 C42.9816553,18.2426269 42.6769292,20.2176978 42.0674771,22.1927688 C41.4580249,24.1678398 40.6962097,26.1429107 40.8485727,28.1179817 C41.0009358,30.0930527 40.2391206,32.0681237 40.2391206,34.0431946 C40.2391206,36.0182656 39.0202162,37.9933366 39.0202162,36.0182656 Z" transform="rotate(19 41 26.283)"/>
+      <path fill="#CE321C" d="M52.6750568,34.029904 C52.6750568,32.0548331 52.9797828,34.029904 53.589235,28.1046911 C54.1986872,22.1794782 54.1986872,20.2044073 54.8081394,18.2293363 C55.4175915,16.2542653 56.6364959,12.3041234 56.6364959,14.2791944 C56.6364959,16.2542653 56.3317698,18.2293363 55.7223176,20.2044073 C55.1128654,22.1794782 54.3510502,24.1545492 54.5034133,26.1296202 C54.6557763,28.1046911 53.8939611,30.0797621 53.8939611,32.0548331 C53.8939611,34.029904 52.6750568,36.004975 52.6750568,34.029904 Z" transform="rotate(-1 54.656 24.294)"/>
+      <path fill="#CE321C" d="M66.4686514,34.1442219 C66.4686514,32.1691509 66.7733775,34.1442219 67.3828297,28.219009 C67.9922818,22.2937961 67.9922818,20.3187251 68.601734,18.3436541 C69.2111862,16.3685832 70.4300905,12.4184412 70.4300905,14.3935122 C70.4300905,16.3685832 70.1253644,18.3436541 69.5159123,20.3187251 C68.9064601,22.2937961 68.1446449,24.268867 68.2970079,26.243938 C68.449371,28.219009 67.6875557,30.19408 67.6875557,32.1691509 C67.6875557,34.1442219 66.4686514,36.1192929 66.4686514,34.1442219 Z" transform="scale(-1 1) rotate(6 0 -1281.683)"/>
+      <path fill="#CE321C" d="M77.3626089,39.0400552 C77.3626089,37.0649843 77.667335,39.0400552 78.2767872,33.1148423 C78.8862394,27.1896294 78.8862394,25.2145584 79.4956915,23.2394875 C80.1051437,21.2644165 81.324048,17.3142746 81.324048,19.2893455 C81.324048,21.2644165 81.019322,23.2394875 80.4098698,25.2145584 C79.8004176,27.1896294 79.0386024,29.1647004 79.1909655,31.1397713 C79.3433285,33.1148423 78.5815133,35.0899133 78.5815133,37.0649843 C78.5815133,39.0400552 77.3626089,41.0151262 77.3626089,39.0400552 Z" transform="scale(-1 1) rotate(6 0 -1484.656)"/>
+      <path fill="#CE321C" d="M88.2565665,44.9150552 C88.2565665,42.9399843 88.5612926,44.9150552 89.1707447,38.9898423 C89.7801969,33.0646294 89.7801969,31.0895584 90.3896491,29.1144875 C90.9991012,27.1394165 92.2180056,23.1892746 92.2180056,25.1643455 C92.2180056,27.1394165 91.9132795,29.1144875 91.3038273,31.0895584 C90.6943752,33.0646294 89.9325599,35.0397004 90.084923,37.0147713 C90.237286,38.9898423 89.4754708,40.9649133 89.4754708,42.9399843 C89.4754708,44.9150552 88.2565665,46.8901262 88.2565665,44.9150552 Z" transform="scale(-1 1) rotate(6 0 -1686.65)"/>
+    </g>
+  </g>
+</svg>
+      <h1>WES ANDERSON:</br>A <span class="mobile-colour">COLOUR</span> RETROSPECTIVE</h1>
+      <div class="button">hide custom</div>
+    </header>
+
+<!-- Mega Palette Area! -->
+
+<div class="mega-palette-container">
+  <h2 style="color:#635231">Custom Andersonian Mood Generator</h2>
+  <p>
+  The below palette is one of <span style="font-weight: 300">1,221,759</span> 'Andersonian moods' randomly generated by the mixing of the 45 individual colours that make up the 'computed' palettes for each of Anderson's films.
+  </p>
+  <div class="palette-and-button">
+    <div class="mega-palette-background">
+    <div class="colour-square-small output" data-id="0" id="mp-one"></div>
+    <div class="colour-square-small output" data-id="1" id="mp-two"></div>
+    <div class="colour-square-small output" data-id="2" id="mp-three"></div>
+    <div class="colour-square-small output" data-id="3" id="mp-four"></div>
+    <div class="colour-square-small output" data-id="4" id="mp-five"></div>
+    </div>
+    <div class="randomise-button"><span class="typcn typcn-refresh"></span>randomise again</div>
+    <div class="code-button"><span class="typcn typcn-code" style="margin-right: 4px;"></span>hex/rgb</div>
+
+  </div>
+  <div class="slide-toggle-container">
+
+    <div class="colour-content">
+
+      <div class="column-hex">
+      <div class="accordion-link">Hex</div>
+            <div class="output-row">
+              <div class="colour-output c-one"></div> <div class="text-output" id="hex-text-one"></div>
+            </div>
+            <div class="output-row">
+              <div class="colour-output c-two"></div> <div class="text-output" id="hex-text-two"></div>
+            </div>
+            <div class="output-row">
+              <div class="colour-output c-three"></div> <div class="text-output" id="hex-text-three"></div>
+            </div>
+            <div class="output-row">
+              <div class="colour-output c-four"></div> <div class="text-output" id="hex-text-four"></div>
+            </div>
+            <div class="output-row">
+              <div class="colour-output c-five"></div> <div class="text-output" id="hex-text-five"></div>
+            </div>
+
+      </div>
+
+
+
+      <div class="column-rgb">
+        <div class="accordion-link">Rgb</div>
+        <div class="output-row">
+        <div class="colour-output c-one"></div> <div class="text-output" id="rgb-text-one"></div>
+      </div>
+      <div class="output-row">
+        <div class="colour-output c-two"></div> <div class="text-output" id="rgb-text-two"></div>
+      </div>
+      <div class="output-row">
+        <div class="colour-output c-three"></div> <div class="text-output" id="rgb-text-three"></div>
+      </div>
+      <div class="output-row">
+        <div class="colour-output c-four"></div> <div class="text-output" id="rgb-text-four"></div>
+      </div>
+      <div class="output-row">
+        <div class="colour-output c-five"></div> <div class="text-output" id="rgb-text-five"></div>
+      </div></div>
+
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Bottle_Rocket! -->
+
+  <div class="row" id="Rocket">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>Bottle Rocket <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down" data-id="unclicked"></span></div>
+      </div>
+      <div class="accordion-content" style="display: block">
+        <p>
+          The colours in Anderson’s film Bottle Rocket (1996) can best be described as ‘scrappy’, evoking something that only colour can about the claustrophobic trappings of suburbia. Lots of muted creams and browns punctuated by flashes of stark red, the latter perhaps signaling a desire for escape.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Bottle_Rocket/In-use/final-sparklefieldlarge.png" alt="">
+                <div class="appended-palette">
+                  <div class="bottle-rocket colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="bottle-rocket colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="bottle-rocket colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="bottle-rocket colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="bottle-rocket colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Bottle_Rocket/In-use/final-shootfieldlarge.png" alt="">
+        <div class="appended-palette" id="left-palette">
+          <div class="bottle-rocket colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+        </div>
+        <img class="small-img" src="img/Bottle_Rocket/In-use/final-housescenelarge.png" alt="">
+        <div class="appended-palette" id="right-palette">
+          <div class="bottle-rocket colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="bottle-rocket colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="rocket-blended">
+        <div class="colour-square-small bottleBlend one" data-id="0" data-name="bottleRocketBlended">
+        </div>
+        <div class="colour-square-small bottleBlend two" data-id="1" data-name="bottleRocketBlended">
+        </div>
+        <div class="colour-square-small bottleBlend three" data-id="2" data-name="bottleRocketBlended">
+        </div>
+        <div class="colour-square-small bottleBlend four" data-id="3" data-name="bottleRocketBlended">
+        </div>
+        <div class="colour-square-small bottleBlend five" data-id="4" data-name="bottleRocketBlended">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- RUSHMORE! -->
+
+  <div class="row" id="Rushmore">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+
+      <h2>Rushmore <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          The palette used in Rushmore (1998) echoes the rich, plush darks and maroons found in moneyed, preppy academia. In the film, colour denotes status; light shirts the neophytes - dark blues, the enlighted elites.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Rushmore/in-use/screenOne.png" alt="">
+                <div class="appended-palette">
+
+                  <div class="rushmore colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="rushmore colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="rushmore colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="rushmore colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="rushmore colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Rushmore/in-use/screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="rushmore colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="rushmore colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="rushmore colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="rushmore colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="rushmore colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Rushmore/in-use/screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="rushmore colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="rushmore colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="rushmore colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="rushmore colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="rushmore colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="rushmore-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- TENENBAUMS! -->
+
+  <div class="row" id="Tenenbaums">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>The Royal Tenenbaums <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+
+      </div>
+      <div class="accordion-content">
+        <p>
+          Anderson's formative experiment with colour, the palette for The Royal Tenenbaums (2001) reflects its characters' desperate individuality as they each face the repercussions of their differently complicated childhoods.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Royal_Tenenbaums/final-screenOne.png" alt="">
+                <div class="appended-palette" id="tenenbaums-palette">
+
+                  <div class="tenenbaums colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="tenenbaums colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="tenenbaums colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="tenenbaums colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="tenenbaums colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+
+
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Royal_Tenenbaums/final-screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="tenenbaums colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Royal_Tenenbaums/final-screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="tenenbaums colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="tenenbaums colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="tenenbaums-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- LIFE AQUATIC! -->
+
+  <div class="row" id="Aquatic">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>The Life Aquatic <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Spending much of its run-time concerned with a series of overlapping ironies and tragedies, The Life Aquatic (2004) manages to be as colourful as it does bleak.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Life_Aquatic/final-screenOne.png" alt="">
+                <div class="appended-palette">
+
+                  <div class="aquatic colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="aquatic colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="aquatic colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="aquatic colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="aquatic colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Life_Aquatic/final-screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="aquatic colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="aquatic colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="aquatic colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="aquatic colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="aquatic colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Life_Aquatic/final-screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="aquatic colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="aquatic colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="aquatic colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="aquatic colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="aquatic colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="aquatic-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- DARJEELING LIMITED! -->
+
+  <div class="row" id="Darjeeling">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>The Darjeeling Limited <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Boasting a love for colour in full bloom, Anderson's The Darjeeling Limited (2007) uses the vibrant, earthy tones of a fantasy India to accentuate a story about that vibrancy perhaps not being enough.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Darjeeling_Limited/final-screenOne.png" alt="">
+                <div class="appended-palette">
+
+                  <div class="darjeeling colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="darjeeling colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="darjeeling colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="darjeeling colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="darjeeling colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Darjeeling_Limited/final-screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="darjeeling colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Darjeeling_Limited/final-screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="darjeeling colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="darjeeling colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="darjeeling-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FANTASTIC MR. FOX! -->
+
+  <div class="row" id="Fox">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>Fantastic Mr. Fox <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Orange is the clear star here; the base-colour for a near fetishistic experiment in character and colour tactility. Fantastic Mr. Fox came out in 2009.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Fantastic_Fox/final-screenOne.png" alt="">
+                <div class="appended-palette">
+
+                  <div class="fox colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="fox colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="fox colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="fox colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="fox colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Fantastic_Fox/final-screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="fox colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="fox colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="fox colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="fox colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="fox colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Fantastic_Fox/final-screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="fox colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="fox colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="fox colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="fox colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="fox colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="fox-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Moonrise Kingdom! -->
+
+  <div class="row" id="Moonrise">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>Moonrise Kingdom <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Moonrise Kingdom (2012) took Anderson's fascination with retro, muted colours, and paired them with their correct era. Set in the 1960s, its gaudy use of yellows, pinks and greens feels positively felt-like.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Moonrise_Kingdom/final-screenOne.png" alt="">
+                <div class="appended-palette">
+
+                  <div class="moonrise colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="moonrise colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="moonrise colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="moonrise colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="moonrise colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Moonrise_Kingdom/final-screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="moonrise colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="moonrise colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="moonrise colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="moonrise colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="moonrise colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Moonrise_Kingdom/final-screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="moonrise colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="moonrise colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="moonrise colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="moonrise colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="moonrise colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="moonrise-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Grand Budapest Hotel! -->
+
+  <div class="row" id="Budapest">
+    <div class="title-accordion">
+      <div class="title-accordion-label">
+
+      <h2>The Grand Budapest Hotel <!--<span class="smaller">(1998)</span>--></h2>
+      <div class="accordion-label">EXPLORE<span class="typcn typcn-arrow-sorted-down"></span></div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          Anderson at his most sumptuous to date, The Grand Budapest Hotel (2014) is a film posititivly dripping with colour. A setting draped in aging, old-money luxury, crisp against a faraway chocolate-box Alpine locale.
+        </p>
+        <div class="img-with-palette">
+                <img class="large-img" src="img/Grand_Budapest/final-screenOne.png" alt="">
+                <div class="appended-palette">
+
+                  <div class="budapest colour-square-small" data-id="0" data-still="stillOne">
+                  </div>
+                  <div class="budapest colour-square-small" data-id="1" data-still="stillOne">
+                  </div>
+                  <div class="budapest colour-square-small" data-id="2" data-still="stillOne">
+                  </div>
+                  <div class="budapest colour-square-small" data-id="3" data-still="stillOne">
+                  </div>
+                  <div class="budapest colour-square-small" data-id="4" data-still="stillOne">
+                  </div>
+
+                </div>
+        </div>
+
+        <div class="small-img-stack">
+
+        <img class="small-img" src="img/Grand_Budapest/final-screenTwo.png" alt="">
+        <div class="appended-palette" id="left-palette">
+
+          <div class="budapest colour-square-small" data-id="0" data-still="stillTwo">
+          </div>
+          <div class="budapest colour-square-small" data-id="1" data-still="stillTwo">
+          </div>
+          <div class="budapest colour-square-small" data-id="2" data-still="stillTwo">
+          </div>
+          <div class="budapest colour-square-small" data-id="3" data-still="stillTwo">
+          </div>
+          <div class="budapest colour-square-small" data-id="4" data-still="stillTwo">
+          </div>
+
+        </div>
+        <img class="small-img" src="img/Grand_Budapest/final-screenThree.png" alt="">
+        <div class="appended-palette" id="right-palette">
+
+          <div class="budapest colour-square-small" data-id="0" data-still="stillThree">
+          </div>
+          <div class="budapest colour-square-small" data-id="1" data-still="stillThree">
+          </div>
+          <div class="budapest colour-square-small" data-id="2" data-still="stillThree">
+          </div>
+          <div class="budapest colour-square-small" data-id="3" data-still="stillThree">
+          </div>
+          <div class="budapest colour-square-small" data-id="4" data-still="stillThree">
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="label-pin">
+        Palette <span id="loadedOn" class="typcn typcn-pin-outline">
+      </div>
+      <div class="palette-background">
+        <div class="palette" id="budapest-blended">
+        <div class="colour-square-small one">
+        </div>
+        <div class="colour-square-small two">
+        </div>
+        <div class="colour-square-small three">
+        </div>
+        <div class="colour-square-small four">
+        </div>
+        <div class="colour-square-small five">
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+
+  <script src="script.js"></script>
+  <script> var color = tinycolor("red");</script>
+  </body>
+</html>
